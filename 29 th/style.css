@@ -1,0 +1,36 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: black;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* Now It's time to Add Styling */
+.cursor{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(189, 189, 204);
+    border-radius:50%;
+    position: absolute;
+    box-shadow: 10px 10px 30px rgb(143, 143, 155);
+    transition:  all linear 0.3s;
+    mix-blend-mode: difference;
+    
+}
+h1{
+    font-size: 10vw;
+    color: white;
+    font-style: oblique ;
+}
+#main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ position: relative;
+ cursor: pointer;
+}
