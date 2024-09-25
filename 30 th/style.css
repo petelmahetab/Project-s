@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+    
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: black;
+/* position: relative; */
+}
+.element{
+    /* position: absolute; */
+    height: 100px;
+    width: 100%;
+    /* background-color: burlywood; */
+    color: white;
+    border-bottom: 3px solid #fff;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+.element h1{
+    font-size: 4vw;
+}
