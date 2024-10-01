@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -19,9 +20,10 @@ body{
 background-color: rgb(46, 45, 45);
 border-radius: 3%;
 border: 3px solid black;
+
 }
 .stories{
-  height: 120px;
+  height: 100px;
   width: 100%;
   border-radius: 3%;
   padding: 20px;
@@ -29,12 +31,31 @@ border: 3px solid black;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  gap:9px
+  gap:p10x
 }
 .stories::-webkit-scrollbar{
     display: none;
 }
+.logo{
+    display: flex;
 
+}
+.logo p{
+    font-size: 1.5vw;
+    color: white;
+    font-family:"Lobster Two";
+    margin:20px;
+   
+}
+
+.heart{
+margin-left:100px;
+margin-top: 25px;
+justify-content: flex-end;
+}
+#share{
+    margin-left: 10px;;
+}
 .story{
    border: 2px solid rgb(155, 9, 9);
     height: 90px;
@@ -42,6 +63,7 @@ border: 3px solid black;
     border-radius: 50%;
     overflow: hidden;
     display: inline-block;
+    margin-top: -7%;
 }
 .story img{
     height: 100%;
