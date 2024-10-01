@@ -15,8 +15,8 @@ body{
     align-items: center;
 }
 #card{
-    height: 520px;
-    width: 320px;
+    height: 600px;
+    width: 350px;
 background-color: rgb(46, 45, 45);
 border-radius: 3%;
 border: 3px solid black;
@@ -49,7 +49,7 @@ border: 3px solid black;
 }
 
 .heart{
-margin-left:100px;
+margin-left:130px;
 margin-top: 25px;
 justify-content: flex-end;
 }
@@ -63,7 +63,8 @@ justify-content: flex-end;
     border-radius: 50%;
     overflow: hidden;
     display: inline-block;
-    margin-top: -7%;
+    margin-top: -6%;
+    padding: 5px;
 }
 .story img{
     height: 100%;
@@ -71,4 +72,54 @@ justify-content: flex-end;
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
+}
+
+
+/* Bottom Part */
+.header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.header #profile{
+    width: 15%;
+    height:15%;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 3px;
+     margin-left: 10px;
+}
+.header p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.header p span{
+    font-size: 10px;
+}
+
+
+/* Main Post */
+.main-post{
+    display: flex;
+    justify-content: center;
+    /* width: 80%; */
+}
+.box{
+    width: 85%;
+    height: 60%;
+    /* background-color: white; */
+    object-fit: cover;
+      object-position: center;
+      overflow: hidden;
+      opacity: 1;
+      border-radius: 10px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+
 }
