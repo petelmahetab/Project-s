@@ -1,6 +1,4 @@
-:root{
-    /* --Back:url('Heart.png'); */
-}
+
 *{
     margin:0;
     padding:0;
@@ -11,6 +9,7 @@ html,body{
     height: 100%;
     background-color: black;
     position: relative;
+    overflow: hidden;
 }
 
 span{
