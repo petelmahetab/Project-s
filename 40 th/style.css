@@ -14,8 +14,8 @@ html,body{
 
 }
 .counter-box{
-    height: 30%;
-    width: 40%;
+    height: 40vh;
+    width: 30vw;
     border: 1px solid black;
     background-color: white;
    border-radius: 10px;
@@ -36,6 +36,7 @@ html,body{
     /* margin-left: 10%; */
     margin-top: 10px;
     text-align: center;
+   
     border: none;
     border-radius: 10px;
 }
