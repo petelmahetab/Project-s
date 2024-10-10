@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* img{
+    width: 100vw;
+    height: 99.9vh;
+    opacity: 1;
+} */
+.back-ground-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url('https://c4.wallpaperflare.com/wallpaper/593/683/596/avengers-infinity-war-thanos-wallpaper-preview.jpg ');
+    color: white;
+}
+.clock{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-align:center;
+    display: flex;
+}
+
+.clock div{
+    margin: 10px;
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background: darkblue;
+    opacity: 0.8;
+    /* color */
+}
