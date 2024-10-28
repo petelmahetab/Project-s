@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10px;
+    font-size: 3vw;
+}
+
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    position: relative;
+    width: 50vw;
+    height: 80px;
+    background-color: rgb(58, 60, 61);
+    align-items: center;
+    border-radius: 5px;
+}
+.countdown #day::after{
+    content: "days";
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    margin-top: 30px;
+    color: rgb(238, 228, 135);
+}
+
+.countdown #hr::after{
+    content: "hours";
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    margin-top: 30px;
+    color: rgb(238, 228, 135);
+}
+
+.countdown #minute::after{
+    content: "minutes";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-top: 30px;
+    color: rgb(238, 228, 135);
+}
+
+.countdown #sec::after{
+    content: "seconds";
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    margin-top: 30px;
+    color: rgb(238, 228, 135);
+}
+.year{
+    color: rgb(131, 12, 12);
+    box-shadow:rgba(0, 0, 0, 0.03);
+}
