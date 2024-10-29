@@ -65,3 +65,9 @@ height: 100vh;
     color: white;
     margin-top: 15px;
 }
+
+#send:active{
+    transform: scale(0.9);
+    transition: 0.5 ease;
+    /* background-color: red; */
+}
