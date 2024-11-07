@@ -1,15 +1,19 @@
 // Get elements
 const btn = document.querySelector('#your');
 const birthday = document.querySelector('#input');
-const asOutput=document.querySelector('#return');
+const asOutput = document.querySelector('#return');
+
 // Calculate age function
 function calculateAge() {
     const birthDate = birthday.value; // Get the value of the input
+    console.log("Birthday input value:", birthDate); // Debugging: check input value
+
     if (birthDate === '') {
         alert('Please fill in your DOB');
     } else {
         const age = getAge(birthDate);
-        asOutput.innerText=age;   
+        console.log("Calculated age:", age); // Debugging: check calculated age
+        asOutput.innerText = age;   
     }
 }
 
