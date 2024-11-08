@@ -6,4 +6,91 @@
 html,body{
     width: 100%;
     height: 100%;
+    font-family: sans-serif;
+    background-color: #222121;
+}
+.container{
+    background-color: rgb(100, 98, 98);
+    box-shadow: 0 0 20px rgba(129, 124, 124, 0.2);
+    /* margin-top: 50px; */
+    text-align: center;
+    max-width: 600px;
+    margin:  10% auto;
+    border-radius: 5px;
+    padding:20px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+margin-top: 15px;
+}
+form input[type='text']{
+  padding: 10px;
+  border: none;
+  outline: white;
+  font-size: 18px;
+  width: 60%;
+}
+
+form input[type='submit']{
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    transition: background-color 0.3 ease-in;
+}
+form input[type='submit']:hover{
+    background-color: #0062cc;
+}
+
+.icon img{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.temperature{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.discription{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.details > div{
+    padding: 30px 10px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    flex: 1;
+    /* height: 30px; */
+    border-radius: 5px;
+    text-align: center;
+    min-height: 80px;
+}
+
+@media (max-width:768px) {
+    form{
+        flex-direction: column;
+    }
+    
+    form input[type='text']{
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
