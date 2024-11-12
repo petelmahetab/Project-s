@@ -47,7 +47,8 @@ padding: 0 10px;
 }
 .search-results{
     display: flex;
-    
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .search-result img{
     width: 100%;
