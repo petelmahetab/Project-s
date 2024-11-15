@@ -75,7 +75,7 @@
 
 // 4. create an 3 subarray into single array without Flat
 //-->
-const arr=[[1,2,3],[4,5,6],[7,8,9]]
+// const arr=[[1,2,3],[4,5,6],[7,8,9]]
 // // 1.Flat()
 // const v=arr.flat()
 // console.log(v);
@@ -99,7 +99,91 @@ const arr=[[1,2,3],[4,5,6],[7,8,9]]
 
 
 // Write an fucntion which take a parameters
-function abc(a,b,...args){
+// function abc(a,b,...args){
 
+// }
+// console.log(abc.length);
+
+
+
+// Guess The Output
+
+// function fn(){
+//     console.log("first")
+// }
+// console.log(fn.name)
+
+// 
+
+// let ar=[200,100,330,70]
+// ar.sort((a,b)=>{
+//     return a-b;
+// });
+// console.log(ar); 
+//becasue of (a,b) parameter 1.200-100=100 (+) so 200 will as result other (-)  so negative value
+// 330-200=130 (+) so 330 after 200
+// 70-200=-130 
+//70-100= -30  (-) it comes before 100
+// Final Output Will be: [70,100,200,330]
+
+
+// function ABC(xyz){
+// console.log(--xyz);
+// }ABC(1.12)  //0.12
+
+// console.log([]==[]) //false
+// console.log([] == '') //false //[] converted into ''
+
+
+// function abc(a,b=0,c){
+
+// }
+// // bey defalut  after b parameter will be counted in length property
+// console.log(abc.length)
+
+
+// revsere the string without inbuilt
+// let str="hii there"
+// let newstr=''
+// for(let i=str.length-1;i>=0;i--){
+//    newstr+=str[i];
+// }
+// console.log(newstr)
+// newstr=str.split('').reverse().join('')
+// console.log(newstr)
+
+// write an impure function
+
+// let m=0;
+// function ind(n){
+//     return Math.random()+n;
+// }
+// console.log(ind(5))
+
+// const ar=[1,2,3,4]
+// delete ar[2]
+// console.log(ar.length)//not affect on length because of delete is operator an object but not 3 will be removed "undefined" 
+
+
+// create an string with space " i love you.!"
+let str="iloveyou!";
+let newStr=''
+// BuiltIn method
+// newStr=str.replace('i','I ').replace('l',' L').replace('y',' Y')
+// console.log(newStr)
+
+// Custom logiclet string = "iloveu";
+let result = '';
+for (let i = 0; i < str.length; i++) {
+    if (str[i] === 'i' && i === 0) {
+        result += 'i ';  // Add space after 'i'
+    } else if (str[i] === 'l' ) {
+        result += ' l';  // Add space before 'u'
+    }else if(str[i]==='y' && i===5){
+        result+=' y'
+    } 
+    else {
+        result += str[i];
+    }
 }
-console.log(abc.length);
+console.log(result);  // Output: "i love u"
