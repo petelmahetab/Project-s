@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 39, 39);
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#timer{
+    color: darkgray;
+    font-size: 4vw;
+}
+h1{
+    font-size: 5vw;
+    color:cadetblue;
+}
+#buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  height: 10%;
+  margin: 50px 0;
+    /* background-color: aqua; */
+}
+#reset{
+   width: 200px;
+   height: 70px;
+   border-radius: 30px;
+   font-size: x-large;
+}
+#reset:hover{
+    background-color:grey;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid black;
+}
+#stop{
+    width: 200px;
+   height: 70px;
+   border-radius: 30px;
+   font-size: x-large;
+
+}
+
+#stop:hover{
+    background-color: rgb(138, 9, 9);
+    color: white;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid black;
+}
+#start{
+    width: 200px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: x-large;
+}
+#start:hover{
+    background-color: green;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid black;
+}
+
+@media  (max-width:800px) {
+    h1{
+        font-size: 4vw 
+    }
+    #timer{
+        font-size: 3vw;
+        width: 300px;
+    }
+    #buttons{
+        width: 40%;
+    }    
+   
+}
