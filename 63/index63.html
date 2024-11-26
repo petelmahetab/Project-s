@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Technical | Interviews</title>
+</head>
+
+<body>
+    <!-- Now I'm trying to solve problem on JS using PROMISE's -->
+    <div id="imgContainer"></div>
+
+    <script>
+
+        //Q. Make an 2 API Call's  and handled with catch and
+        const getContainer = document.querySelector('#imgContainer');
+        
+        function makeAPICalls(url,callback){
+            fetch(url)
+            .then(r=>r.json())
+            .then(yourdata=>callback(yourdata))
+            .catch(e=>console.error("Error during Api Call's ",e));
+        }
+
+        function handleDData(d){
+            console.log("Processed Data",d);
+        }
+
+        function main(){
+            const API1="https://jsonplaceholder.typicode.com/posts/1";
+            const API2="https://jsonplaceholder.typicode.com/posts/2";
+   makeAPICalls(API1,handleDData);
+   makeAPICalls(API2,handleDData);
+        }
+main();
+
+    </script>
+</body>
+
+</html>
