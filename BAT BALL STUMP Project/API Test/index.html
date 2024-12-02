@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>API Testing</title>
+</head>
+<body style="text-align: center; background-color:black; color:wheat; padding-top:10%;">
+    <h1>This Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore numquam, inventore suscipit dolorem iste, modi quisquam nesciunt sint error odit, vero in incidunt nobis unde. Alias ipsum soluta, culpa cum, aut quisquam, harum iste corrupti laudantium voluptate quas ex vitae dolore. Cum, debitis dolore! Perferendis adipisci voluptatem inventore odio?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quas vitae ipsam amet nam itaque assumenda natus similique. Minima laboriosam, fugit quasi dignissimos deleniti dicta reiciendis quae suscipit incidunt velit! Aut impedit velit laborum, beatae asperiores saepe! Soluta dolores quos non commodi quo ex hic rerum, earum natus sed perspiciatis!</p>
+</body>
+<script>
+    const link="https://api.restful-api.dev/objects";
+    const testApi=new XMLHttpRequest();
+    //open is method is present in XMLHttpsRequest
+    testApi.open('GET',link);
+    testApi.onreadystatechange=function(){
+     //get 4 stages
+     if(testApi.readyState===4){
+        const convertJson=JSON.parse(this.testApi.readyState);
+        //
+        document.getElementById("apidata").textContent=JSON.stringify(Response,null,2,);
+        console.log(convertJson);
+     }
+    }
+    testApi.send();
+</script>
+</html>

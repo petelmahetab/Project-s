@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #455054;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Container{
+    background-color: #D4DFC9;
+    display: flex;
+    box-shadow: 40px 30px 70px 15px rgb(83, 81, 81);
+    flex-direction: column;
+   width: 30%;
+   text-align: center;
+   border-radius: 10px;
+   height: 80%;
+}
+h1{
+    font-weight: bolder;
+    color:rgb(28, 28, 218);
+    font-style: normal;
+    /* text-decoration: underline; */
+}
+
+label{
+     display: block;
+     padding: 10px;
+     font-weight: bold;
+}
+
+input[type="number"]{
+    width:75%;
+    height:25%;
+    padding:12px;
+    /* border:5px; */
+}
+
+/* input > textarea{
+    height: 95px;
+    width:80%;
+    text-align: center;
+    color:#4e342e;
+    margin-top:5px;
+    font-size: large;
+    font-weight: bold;
+} */
+#EMI{
+    height: 80px;
+    width:50%;
+    text-align: center;
+    color: #455054;
+    font-size: large;
+}
+
+button{
+    height: 40px;
+    width:35%;
+    margin: 20px;
+    border-radius: 10px;    
+    background-color: blue;
+    color:white;
+    cursor: pointer;
+}
+button:hover{
+      background-color:rgb(5, 5, 92);   
+}
+
+@media (maxwidth:600px){
+    .Container{
+        padding: 15px;
+        overflow: hidden;
+    }
+    input button textarea{
+        padding:10px;
+    } 
+}
+@media (minwidth:100px){
+    .Container{
+        padding: 5px;
+        overflow: hidden;
+    }
+    input button textarea{
+        padding:5px;
+    } 
+}

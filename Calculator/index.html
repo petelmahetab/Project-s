@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- <div class="useMe">
+        <h3 style="background-color: rgba(38,45,55,255); align-items:center; justify-content:center;">Try Me for Solve Expression</h3>
+    </div> -->
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <input type="text" id="input" style="height: 40px; width:220px; margin-bottom:15px; color:white; background-color:rgba(38,45,55,255);border:none; border-radius:10px; font-size:larger; text-align:right;">
+            
+            <div >
+                <input type="button" id="but1" style="color:white; background-color:rgb(179, 52, 6); border-radius:50px;" value="AC" onclick="inputNumber='';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" style="color:white; background-color:rgb(179, 52, 6);"value="DE"
+                onclick=" let last=inputNumber;
+                for(let i=0;i<=last.length;i++){  
+                    
+                   last=last.slice(0,-1);
+                   document.querySelector('#input').value=last;
+                }
+                ">
+                <input type="button" id="but" value="." onclick="inputNumber=inputNumber+'.';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="/" onclick="inputNumber=inputNumber+'/';
+                document.querySelector('#input').value=inputNumber;
+                ">
+            </div>
+            <div >
+                <input type="button" id="but1" value="7" onclick="inputNumber=inputNumber+'7';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="8" onclick="inputNumber=inputNumber+'8';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="9" onclick="inputNumber=inputNumber+'9';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="*" onclick="inputNumber=inputNumber+'*';
+                document.querySelector('#input').value=inputNumber;
+                ">
+            </div>
+            <div >
+                <input type="button" id="but1" value="4" onclick="inputNumber=inputNumber+'4';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="5" onclick="inputNumber=inputNumber+'5';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="6" onclick="inputNumber=inputNumber+'6';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="-" onclick="inputNumber=inputNumber+'-';
+                document.querySelector('#input').value=inputNumber;
+                ">
+            </div>
+            <div >
+                <input type="button" id="but1" value="1" onclick="inputNumber=inputNumber+'1';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="2" onclick="inputNumber=inputNumber+'2';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="3" onclick="inputNumber=inputNumber+'3';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but"  style="border-radius:50%;" value="+" onclick="inputNumber=inputNumber+'+';
+                document.querySelector('#input').value=inputNumber;
+                ">
+
+            </div>
+            <div >
+                <input type="button" id="but1" value="00" onclick="inputNumber=inputNumber+'00';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" value="0" onclick="inputNumber=inputNumber+'0';
+                document.querySelector('#input').value=inputNumber;
+                ">
+                <input type="button" id="but" style="width:110px; border-radius:30px;background-color:rgba(0, 0, 255, 0.671); font-weight:500;"
+                value="=" onclick="inputNumber=eval(inputNumber);
+                document.querySelector('#input').value=inputNumber;
+                ">
+               
+            </div>
+        </form>
+        </div>
+        <div class="discription"> 
+            <h3>Use me When you Stuck..</h3>
+        </div>
+    </div>
+
+  
+
+
+    <script>
+        let inputNumber='';
+        document.querySelector('#input').value=inputNumber;
+    </script>
+</body>
+</html>

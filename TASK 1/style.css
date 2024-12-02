@@ -1,0 +1,50 @@
+
+/* .Container{
+    align-items: center;
+    justify-content: center;
+} */
+
+.firstContainer{
+    height: 300px;
+    width: 800px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 3px;
+    /* margin:5px; */
+   
+}
+.firstContainer:hover{
+    /* cursor: pointer; */
+    background-color: red;
+}
+
+.secondContainer{
+    height: 300px;
+    width: 800px;
+    background-color: darkblue;
+    border: 2px solid black;
+    border-radius: 3px;
+
+}
+.secondContainer:hover{
+    /* cursor: pointer; */
+    background-color: black;
+}
+.thirdContainer{
+  
+    height: 300px;
+    width: 800px;
+    background-color: darkorchid;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.thirdContainer:hover{
+    /* cursor: pointer; */
+    background-color: green;
+}
+p{
+    color: white;
+    font-size: large;
+    align-items: center;
+    margin-left:45%;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+
+</head>
+<body>
+    <form>
+        <div>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+       <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <textarea style="height: 60px; width:50%; margin-left:50%; margin-top:-60px;" >This TEXTAREA provides context-sensitive help. Click on any input filed or user the TAB key to get more information about the input field.</textarea>
+        <div>
+            <h4>Toppings:</h4>
+            <div>
+                <input type="checkbox" id="extra_cheese" name="toppings" value="Extra Cheese">
+                <label for="extra_cheese">Extra Cheese</label>
+                <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="olives" name="toppings" value="Olives">
+                <label for="olives">Olives</label>
+                <input type="checkbox" id="pepper" name="toppings" value="Pepper">
+                <label for="pepper">Pepper</label>
+                <input type="checkbox" id="bacon" name="toppings" value="Bacon">
+                <label for="bacon">Bacon</label>
+                <input type="checkbox" id="tomatoes" name="toppings" value="Tomatoes">
+                <label for="tomatoes">Tomatoes</label>
+                <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label><b>How do you want to get your pizza?</b></label>
+             <label for="delivery">Delivery</label>
+                <input type="radio" id="delivery" name="delivery_pickup" value="Delivery">
+                <label for="pickup">Pickup</label>
+                <input type="radio" id="pickup" name="delivery_pickup" value="Pickup">        
+        </div>
+
+        <br>
+        <div>
+            <label for="tip">Tip?</label>
+            <select id="tip" name="tip">
+                <option value="15%">15%</option>
+                <option value="20%">25%</option>
+                <option value="25%">35%</option>
+            </select>
+        </div>
+
+    <br>
+    <hr>
+        <div>
+            <label for="address">Address:</label>
+            <br>
+         
+            <textarea id="address" name="address" style="height: 40px;"></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button" onclick="showSummary()">Show Summary</button>
+        </div>
+    </form>
+
+</body>
+</html>

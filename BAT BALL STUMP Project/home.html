@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+    
+    <h1> BAT BALL STUMP GAME </h1>
+    <p id="para"></p>
+    <div class="button">
+
+        <button onclick="
+           const userChoice='You have Choosen BAT..!';
+             let compChoice;
+             let random=Math.random()*3;
+             
+             if(random > 0 && random <=1){
+                 compChoice='BALL';
+                 
+             }else if(random >1 && random <=2){
+                 compChoice='BAT';
+                 
+             }else {
+                 compChoice='STUMP';
+                
+             }
+  
+         const computrSMG=`Computer Choice is ${compChoice}`;
+        let result;
+        if(compChoice === 'BALL'){
+            result='HURRY ..! YOU WON THIS GAME..';
+            
+        }else if(compChoice === 'BAT'){
+            result='NO one can WIN . Its a TIE..';
+            
+        }else {
+            result='Sorry..! COMPUTER HAS WON THIS GAME...';
+          
+        }
+
+             alert(
+                 `You have Choosen BAT..!.\n Computer Choice is ${compChoice} \n  ${result}`
+             )            
+        ">
+          BAT
+        </button>
+
+
+        <button  onclick="
+        const userChoice='You have Choosen BALL..!';
+        let compChoice;
+        let random=Math.random()*3;
+        
+        if(random > 0 && random <=1){
+            compChoice='BALL';
+            
+        }else if(random >1 && random <=2){
+            compChoice='BAT';
+            
+        }else {
+            compChoice='STUMP';
+           
+        }
+  
+         const computrSMG=`Computer Choice is ${compChoice}`;
+        let result;
+        if(compChoice === 'STUMP'){
+            result='HURRY ..! YOU WON THIS GAME..';
+            
+        }else if(compChoice === 'BALL'){
+            result='NO one can WIN . Its a TIE..';
+            
+        }else {
+            result='Sorry..! COMPUTER HAS WON THIS GAME...';
+          
+        }
+
+             alert(
+                 `You have Choosen BALL..!.\n Computer Choice is ${compChoice} \n  ${result}`
+             )            
+        ">
+          BALL
+        </button>
+
+
+        <button  onclick="
+        const userChoice='You have Choosen STUMP..!';
+        let compChoice;
+        let random=Math.random()*3;
+        
+        if(random > 0 && random <=1){
+            compChoice='BALL';
+            
+        }else if(random >1 && random <=2){
+            compChoice='BAT';
+            
+        }else {
+            compChoice='STUMP';
+           
+        }
+  
+         const computrSMG=`Computer Choice is ${compChoice}`;
+        let result;
+        if(compChoice === 'BAT'){
+            result='HURRY ..! YOU WON THIS GAME..';
+            
+        }else if(compChoice === 'STUMP'){
+            result='NO one can WIN . Its a TIE..';
+            
+        }else {
+            result='Sorry..! COMPUTER HAS WON THIS GAME...';
+          
+        }
+
+             alert(
+                 `You have Choosen STUMP..!.\n Computer Choice is ${compChoice} \n  ${result}`
+             )            
+        ">
+          STUMP
+        </button>
+
+    </div>
+    <!--  -->
+    <script>
+       
+    </script>
+</body>
+</html>

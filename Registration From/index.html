@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form VALIDATION</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="Favicon.gif" type="image/svg+xml">
+    <!-- <link rel="stylesheet" href="./output.css"> -->
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-900">
+
+    <div class="w-full max-w-md mx-auto p-4 md:p-6 lg:p-8 bg-slate-800 rounded-lg shadow-xl shadow-blue-600">
+       <form id="form-start" action="submitted.html" class="flex flex-col gap-4" >
+         <fieldset>
+            <h1 class="text-4xl font-bold mb-6 text-orange-500 font-serif text-center">!. REGISTER NOW .!</h1>
+             <!-- 1 for UserName -->
+               <div class="flex flex-col gap-2 text-center">
+                   <label  for="name" class="font-serif text-xl font-bold text-sky-600">UserName</label>
+                   <input type="text" id="name" class="w-4/5 ml-10 h-10 rounded-sm">
+                   <span id="spanOfError" class="error"></span>  
+               </div>
+
+               <!-- 2 for PassWord -->
+               <div class="flex flex-col gap-2 text-center">
+                <label  for="password" class="font-serif text-xl font-bold text-sky-600">PassWord</label>
+                <input type="password" id="password" class="w-4/5 ml-10 h-10 rounded-sm">
+                <span id="spanOfError" class="error"></span>  
+               </div>
+                <!-- 3 for Mobile -->
+                <div class="flex flex-col gap-2">
+                    <label  for="mobile" class="font-serif text-xl text-center font-bold text-sky-600">Mobile</label>
+                    <input type="tel" id="mobile" class="w-4/5 ml-10 h-10 rounded-sm">
+                    <span id="spanOfError" class="error"></span>  
+                </div>
+
+                <!-- 4 for Gender -->
+                <div class="flex flex-col gap-2 text-center">
+                    <p class="font-bold text-xl text-sky-600">Gender</p>
+                    <div class="flex gap-4 text-center">
+                        <input type="radio" name="gender" id="male" class="h-4 w-4 rounded-sm cursor-pointer ml-20" value="male" >
+                        <label  for="male" class="font-serif text-l text-slate-50 ">Male</label>
+                        <input type="radio" name="gender" id="female" class="h-4 w-4 rounded-sm cursor-pointer ml-10 " value="female" >
+                        <label  for="female" class="font-serif text-l text-slate-50 ">Female</label>
+                    </div>
+                    <span id="spanOfError" class="error"></span>  
+                </div>
+
+                <!-- Submit Button -->
+                <div class="mt-4 text-center">
+                    <button type="submit" class="h-14 w-1/2 bg-orange-600 hover:bg-orange-900 text-white rounded-full text-center" >Submit</button>
+                </div>
+
+           
+         </fieldset>
+
+       </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

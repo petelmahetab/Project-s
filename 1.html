@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Introduction</title>
+    <style>
+        
+        .container {
+            display: flex;
+            gap: 0.5rem;
+            
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+           
+          }
+        textarea{
+
+            width: 500px;
+            height: 100px;
+            text-align: center;
+        }
+        button{
+           flex-direction: column;
+           gap: 1rem;
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: brown;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <textarea class="areaOfText" placeholder="Some Texts"></textarea>  
+     <button class="setbutton" id="set" type="button">Set some Text</button>
+     <button class="clearbutton" id="clear" type="button">Clear that text</button>
+    </div>
+
+    <script>
+          const text=document.body.querySelector(".areaOfText");
+
+          const setText=document.body.querySelector("#set");
+          setText.addEventListener("click",()=>{
+            text.textContent="So this is Text setting in TextArea fields.";
+          });
+         
+          const clearText=document.body.querySelector("#clear");
+          clearText.addEventListener("click",()=>{
+               text.textContent=" ";
+          });
+    </script>
+</body>
+</html>

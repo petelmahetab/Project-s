@@ -1,0 +1,58 @@
+body {
+    margin: 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:blue;
+  }
+    
+  .spinner{
+    
+    height:350px;
+    width:350px;
+    border:8px solid black;
+    border-radius:50%;
+    margin-left:80px;
+    margin-top:80px;
+    background:linear-gradient(to right,white 50%,black 50%);
+    border-radius:50%;
+    position:relative;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  .spinner::before{
+    content:'';
+    height:70px;
+    width:100px;
+    border:50px solid black;
+    background-color:black;
+    border-radius:50%;
+    position:absolute;
+    top:4px;
+    left:26%;
+    
+  }
+    
+  .spinner::after{
+    content:'';
+    height:76px;
+    width:90px;
+    border:50px solid white;
+    background-color:white;
+    border-radius:50%;
+    position:absolute;
+    top:49%;
+    left:20%;
+    bottom:0px;
+  }
+  @keyframe spin{
+      
+      from{
+        transform:rotate(0deg);
+      }
+      to{
+        transform:rotate(360deg);
+      }
+  }
+      
+  

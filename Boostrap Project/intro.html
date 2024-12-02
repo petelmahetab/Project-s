@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEREST Calculator</title>
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="heading"><h1>Simple Interest Calculator</h1></div>
+
+        <!-- 1 st Field -->
+        <div class="principle_amount">
+            <label for="initial-amount">Principle Amount (&#8377;)</label>
+            <input type="number" placeholder="Enter Principle Amount.." id="initial-amount">
+        </div>
+
+        <!-- 2 nd Field -->
+        <div class="rate-of-interst">
+            <label for="interst">Rate of Interst (%)</label>
+            <input type="number" placeholder="Rate of Interst.." id="interst">
+        </div>
+
+        <!-- 3rd Field -->
+        <div class="no-of-month">
+            <label for="month">Number of Months </label>
+            <input type="number" placeholder="Enter month to calculates EMI." id="month">
+        </div>
+
+        <!-- 4th Field -->
+        <div class="principle_amount" onclick="DOMContentLoaded();">
+            <button id="button" onclick="dothis()">Calculate</button>
+        </div>
+
+        <!-- 5th Field -->
+        <div class="display-EMI">
+            <label for="EMI" >EMI</label>
+            <!-- <input type="Text" placeholder="Here u can see Your EMI Rate.." id="EMI"> -->
+            <textarea id="EMI">
+                
+            </textarea>
+        </div>
+    </div>
+
+
+    <!-- Link JS -->
+     <script src="script.js"></script>
+</body>
+</html>
